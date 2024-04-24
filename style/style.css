@@ -1,0 +1,53 @@
+/*TODAVÍA NO PUSE NINGUNA CARACTERÍSTICAS ACÁ,SOLO LO HICE PARA QUE ESTÉ EL ARCHIVO, ASÍ QUE HAY QUE METERLE MUCHA MANO A ESTO*/
+
+
+
+
+
+/*Esto lo puse solo para que se hagan una idea de como me imaginé que quedaría la página de menú después se puede cambiar*/
+.plato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #5a4a4a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(112, 10, 10, 0.1);
+  }
+  
+  .info_plato {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .nombre_plato {
+    font-size: 20px; 
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .precio_plato {
+    color: #111010;
+    margin-bottom: 5px;
+  }
+  
+  .descripcion_plato {
+    font-size: 16px; 
+    line-height: 1.5;
+  }
+  
+  .imagen_plato {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #302424; 
+    border-radius: 10px; 
+    overflow: hidden;
+  }
+  
+  .imagen_plato img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+  }
+  

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body class="body_registro">
+    <header class="header_registro">
+        <a class="" 
+            href="/index.html">
+            <i class=""></i>
+            <span>Restaurante</span>
+        </a>
+    </header>
+
+    <main id="main" 
+        class="main">
+        <section class="seccion_registro">
+            <!--pongo get ya que en github pages da error el method post-->
+            <form action="" method="get">
+                <h2 class="titulo_registro">
+                    Iniciar Sesión</h2>
+                <div>
+                    <input type="email" 
+                        placeholder="Email" 
+                        id="email" 
+                        name="email"
+                        required>
+                </div>
+                <div>
+                    <input type="password" 
+                        placeholder="Contraseña" 
+                        id="password" 
+                        name="password"
+                        required>
+                </div>
+                <div>
+                    <input class="boton" 
+                        type="submit" 
+                        value="Iniciar Sesión">
+                </div>
+                <div>
+                    <p>¿Todavía no sos usuario?</p>
+                    <a id="new_user" 
+                        class="new_user" 
+                        href="registro.html">
+                        <input class="boton" 
+                            type="button" 
+                            value="Registrarme"></a>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

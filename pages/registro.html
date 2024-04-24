@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body class="body_registro">
+    <header class="header_registro">
+        <a class="" href="/index.html">
+            <i class=""></i>
+            <span>Restaurante</span>
+        </a>
+    </header>
+    
+    <main id="main" class="main">
+        <section class="seccion_registro">
+            <form action="" 
+                method="get">
+                <h2 class="titulo_registro">
+                    Registro</h2>
+                <div>
+                    <input type="text" 
+                        placeholder="Nombre"  
+                        id="nombre" 
+                        name="nombre"
+                        required>
+                </div>
+                <div>
+                    <input type="text"
+                        placeholder="Apellido"
+                        id="apellido"
+                        name="apellido">
+                </div>
+                <div>
+                    <input type="email" 
+                        placeholder="Email"  
+                        id="email" 
+                        name="email"
+                        required>
+                </div>
+                <div>
+                    <input type="password" 
+                        placeholder="Contraseña"  
+                        id="password" 
+                        name="password"
+                        required>
+
+                </div>
+                <div>
+                    <input type="date" 
+                        placeholder="Fecha de nacimiento (dd/mm/aaaa)"  
+                        id="fecha_nacimiento" 
+                        name="fecha_nacimiento">
+                </div>
+                <div>
+                    <select name="pais" id="pais">
+                        <option value="Sucursal" 
+                            disabled 
+                            selected>Elegir sucursal</option>
+                        <option value="AS">AMBA Sur</option>
+                        <option value="AN">AMBA Norte</option>
+                        <option value="AE">AMBA Este</option>
+                        <option value="AO">AMBA Oeste</option>
+                        <option value="caba">C.A.B.A.</option>
+                    </select>
+                </div>
+                <div class="terminos">
+                    <input class="check" 
+                        type="checkbox" 
+                        id="terminos">
+                    <label class="textoCheck" 
+                        for="terminos">
+                        Acepto los
+                        <a class="link_nav" 
+                            href="terminosYcondiciones.html">
+                            Términos y condiciones
+                        </a>
+                    </label>
+                </div>
+                <div>
+                    <input class="boton" 
+                        type="submit" 
+                        value="Registrarme">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

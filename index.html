@@ -1,0 +1,112 @@
+<!-- LITERALMENTE LO HICE MUY SIMILAR A LA PÁGINA QUE HABÍA QUE REPLICAR, SIÉNTANSE LIBRES DE MODIFICAR LO QUE GUSTEN-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navegacion">
+            <!--ACA NO SÉ SI PONER LAS COSAS EN DIV O NO-->
+            <a class="logo_header" href="/index.html">
+                <i class="logo"></i>
+                <span>Restaurante</span>
+            </a>
+
+            <ul class="list_nav">
+                <li class="list_item">
+                    <a class="link_nav" 
+                        href="./pages/menu.html">
+                        Menú</a>
+                </li>
+                <li class="list_item">
+                    <a class="link_nav" 
+                        href="./pages/registro.html">
+                        Registrarse</a>
+                </li>
+                <li class="list_item">
+                    <a class="link_nav login" 
+                        href="./pages/login.html">
+                        Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main"
+        class="main">
+        <section class="seccion_principal">
+            <h1 class="titulo_principal">
+                El Restaurante</h1>
+            <h2 class="subtitulo_principal">
+                El sabor argentino que necesitás para el momento quieras</h2>
+
+        <section class="buscador_principal">
+            <h2 class="titulo_seccion">
+                ¿Qué estas buscando para comer?</h2>
+            <form class="buscador_comidas">
+                <input class="input_buscador" 
+                    type="text" 
+                    placeholder="Buscar comida..." 
+                    id="buscar" 
+                    name="buscar">
+                <button class="boton_buscador"
+                    type="submit" 
+                    value="Buscar">Buscar</button>
+            </form>
+        </section>
+        <hr>
+        <section id="favoritos" 
+            class="comidas_favoritas">
+            <h3 class="titulo_seccion">
+                Los favoritos de la gente</h3>
+                
+            <div class="plato_fav" 
+                id="favoritos_container">
+                <div class="plato_fav">
+                    <a href="/pages/menu.html">
+                        <div class="plato_fav">
+                            <img class="imgfavs" 
+                                src="" 
+                                alt="Asado para 4 personas" 
+                                loading="lazy">
+                                <div class="titulo_plato">
+                                    <h4>Asado para 4 personas</h4>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                 <!-- Acá hay que replicar con los otros platos y obviamete poner imàgenes y todo eso -->
+            </div>
+            <button class="boton_anterior">
+                Anterior</button>  
+            <button class="boton_siguiente">
+                Siguiente</button>
+        </section>
+        <hr>
+    </main>
+    <footer class="footer">
+        <nav class="navegacion">
+            <ul class="list_nav">
+                <li class="list_item">
+                    <a class="link_nav" 
+                        href="/pages/terminosYcondiciones.html">
+                        Términos y condiciones</a></li>
+            </ul>
+        </nav>
+        <a href="#main" 
+            class="flecha_arriba">
+            <img src="" 
+                alt="subir">
+        </a>
+    </footer>
+
+</body>
+</html>
