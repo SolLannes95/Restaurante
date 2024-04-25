@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" 
         content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+        <link rel="stylesheet" href="../style/style.css">
+        <title>Registro</title>
 </head>
 
 <body class="body_registro">
@@ -18,31 +19,31 @@
     
     <main id="main" class="main">
         <section class="seccion_registro">
-            <form action="" 
+            <form class="seccion_registro_form" action="" 
                 method="get">
                 <h2 class="titulo_registro">
                     Registro</h2>
-                <div>
+                <div class="seccion">
                     <input type="text" 
                         placeholder="Nombre"  
                         id="nombre" 
                         name="nombre"
                         required>
                 </div>
-                <div>
+                <div class="seccion">
                     <input type="text"
                         placeholder="Apellido"
                         id="apellido"
                         name="apellido">
                 </div>
-                <div>
+                <div class="seccion">
                     <input type="email" 
                         placeholder="Email"  
                         id="email" 
                         name="email"
                         required>
                 </div>
-                <div>
+                <div class="seccion">
                     <input type="password" 
                         placeholder="Contraseña"  
                         id="password" 
@@ -50,13 +51,13 @@
                         required>
 
                 </div>
-                <div>
+                <div class="seccion calendario">
                     <input type="date" 
                         placeholder="Fecha de nacimiento (dd/mm/aaaa)"  
                         id="fecha_nacimiento" 
                         name="fecha_nacimiento">
                 </div>
-                <div>
+                <div class="select sucursal">
                     <select name="pais" id="pais">
                         <option value="Sucursal" 
                             disabled 

@@ -1,7 +1,83 @@
 /*TODAVÍA NO PUSE NINGUNA CARACTERÍSTICAS ACÁ,SOLO LO HICE PARA QUE ESTÉ EL ARCHIVO, ASÍ QUE HAY QUE METERLE MUCHA MANO A ESTO*/
+:root{
+  --white: #FFFFFF;
+  --black: #000000;
+  --very-light-pink: #c7c7c7;
+  --text-input-field: #f7f7f7;
+  --grey-light:#adadad;
+  --grey-medio:#6d706f;
+  --grey:#333333;
+  --red:#ff0000;
+  --red-lihgt:#e04f4f;
+  --blue:#0000ff;
+  --blue-light:#5a93d8;
+  --gris-oscuro:#700a0a1a;
+  --naranja:#e48e1c;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+}
+
+/*barra de menu*/
+.header {
+  background-color: var(--grey-medio); 
+  padding: 15px 20px; 
+  display: flex;
+  justify-content: space-between; 
+}
+
+.navegacion {
+  display: flex; 
+  align-items:center; 
+
+}
 
 
+.logo_header {
+  display: flex; 
+  align-items: center; 
+}
 
+.logo {
+  font-size: 2em; 
+  margin-right: 5px; 
+
+}
+.img{
+  width: 10px;
+  height: 10px;
+}
+
+.logo_header span {
+  font-weight: bold;
+}
+
+.list_nav {
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+
+.list_item {
+  display: inline-block; 
+  margin-right: 20px; 
+}
+
+
+.link_nav {
+  text-decoration: none; 
+  color: var(--grey); 
+  font-weight: lighter; 
+  transition: color 0.3s ease; 
+}
+
+.link_nav:hover {
+  color: var(--black);
+}
+
+.login {
+  color: var(--naranja); 
+}
 
 
 /*Esto lo puse solo para que se hagan una idea de como me imaginé que quedaría la página de menú después se puede cambiar*/
@@ -13,7 +89,7 @@
     padding: 15px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(112, 10, 10, 0.1);
+    box-shadow: 0 2px 5px #700a0a1a;
   }
   
   .info_plato {
@@ -50,4 +126,126 @@
     height: 100%;
     object-fit: cover; 
   }
+
+  /*Footer*/
+
+  .footer {
+    background-color: var(--grey-medio); 
+    color: var(--white); 
+    padding: 50px; 
+    text-align: center; 
+    
+  }
   
+  /* Login*/
+  .body .body_registro{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--white);
+    height: 100vh;
+}
+
+.seccion_registro{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 400px;
+background: var(--blue-light);
+border-radius: 10px;
+}
+
+.seccion_registro h2{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid #babcbb;
+    
+}
+
+.seccion_registro form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username{
+    position: relative;
+    border-bottom: 2px solid var(--grey-light);   
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+   background: none;
+    outline: none;
+}
+
+input[type= "submit"]{
+    margin-top: 25px;  
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #e48e1c;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color:var(--red);
+    transition: .5s;
+}
+
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color:black;
+    
+}
+
+.registrarse a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.registrarse a:hover{
+    text-decoration: underline;    
+}
+
+/*Registro*/
+
+  form .seccion{
+    position: relative;
+    border-bottom: 2px solid var(--grey-light);   
+}
+  .seccion_registro_form{
+    margin: 10px;
+    
+  }
+
+  .seccion input{
+    margin: 6px;
+    text-align: left;
+      font-size: 16px;
+      border: none;
+     background: none;
+      outline: none; 
+  }
+
+  input[type= "date"]{
+    font-size: 16px;
+    color: var(--grey-medio);
+    cursor: pointer;
+    outline: none;
+}
+
+.select{
+  margin: 10px;
+  color:#e48e1c;
+}
