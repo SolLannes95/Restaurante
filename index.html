@@ -10,17 +10,17 @@
     <title>Restaurante</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="navegacion">
             <!--ACA NO SÉ SI PONER LAS COSAS EN DIV O NO-->
-            <!--<a class="logo_header" href="/index.html">-->
+            <a class="logo_header" href="/index.html">
+              <div class="logo"> 
                 <img src="/img/Logo.png" width="180px" height="180px">
-                <i class="logo"></i> 
-                <span></span>
+               <!-- <i class="logo"></i> -->
+            </div>
             </a>
-
+                <!-- <span></span> --> 
             <ul class="list_nav">
                 <li class="list_item">
                     <a class="link_nav" 
@@ -75,7 +75,7 @@
                     <a href="/pages/menu.html">
                         <div class="plato_fav">
                             <img class="imgfavs" 
-                                src="" 
+                                src="./img/brindis.jpg" 
                                 alt="Asado para 4 personas" 
                                 loading="lazy">
                                 <div class="titulo_plato">
@@ -93,7 +93,7 @@
         </section>
         <hr>
     </main>
-    <footer class="footer">
+  <!--  <footer class="footer">
         <nav class="navegacion">
             <ul class="list_nav">
                 <li class="list_item">
@@ -105,7 +105,34 @@
         <a href="#main" class="flecha_arriba">
             <img src="/img/flecha arriba.jpg" alt="Subir" width="50px" height="50px">
           </a>
-    </footer>
+    </footer>-->
+    <footer class="footer">
+        <nav class="navegacion">
+          <ul class="list_nav">
+            <li class="list_item">
+              <a class="link_nav" href="/pages/terminosYcondiciones.html">
+                Términos y condiciones
+              </a>
+            </li>
+          </ul>
+        </nav>
+      
+        <div class="social_media">
+          <a href="#" class="social_media_icon">
+            <img src="/img/facebook.png" alt="Facebook">
+          </a>
+          <a href="#" class="social_media_icon">
+            <img src="/img/twitter.png" alt="Twitter">
+          </a>
+          <a href="#" class="social_media_icon">
+            <img src="/img/instagram.png" alt="Instagram">
+          </a>
+        </div>
+      
+        <p class="copyright">
+          © 2024 Todos los derechos reservados.
+        </p>
+      </footer>
 
 </body>
 </html>

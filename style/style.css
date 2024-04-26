@@ -21,9 +21,15 @@
 /*barra de menu*/
 .header {
   background-color: var(--grey-medio); 
-  padding: 15px 20px; 
+  /*padding: 15px 10px; */
   display: flex;
   justify-content: space-between; 
+  height: 80px;
+  width: 100%; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  /*z-index: 100;*/
 }
 
 .navegacion {
@@ -40,9 +46,9 @@
 
 .logo {
   font-size: 2em; 
-  margin-right: 5px; 
-
+  margin-right: 200px; 
 }
+
 .img{
   width: 10px;
   height: 10px;
@@ -60,7 +66,7 @@
 
 .list_item {
   display: inline-block; 
-  margin-right: 20px; 
+  margin-right: 50px; 
 }
 
 
@@ -69,6 +75,7 @@
   color: var(--grey); 
   font-weight: lighter; 
   transition: color 0.3s ease; 
+  
 }
 
 .link_nav:hover {
@@ -77,6 +84,107 @@
 
 .login {
   color: var(--naranja); 
+}
+
+/* principal*/
+
+body {
+  font-family: sans-serif; 
+  background-color: var(--grey-light);
+  color: var(--grey); 
+}
+
+main {
+  max-width: 1200px; /
+  margin: 20px auto; 
+  padding: 50px;
+}
+
+.seccion_principal {
+  text-align: center; 
+}
+
+.titulo_principal {
+  font-size: 3em; 
+  margin-bottom: 10px;
+}
+
+.subtitulo_principal {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 1px solid #ddd; 
+  margin: 20px 0;
+}
+
+.buscador_principal {
+  margin-bottom: 40px;
+}
+
+.titulo_seccion {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.buscador_comidas {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.input_buscador {
+  flex: 1; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.boton_buscador {
+  padding: 10px 20px;
+  background-color: var(--naranja);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comidas_favoritas {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+.plato_fav {
+  width: 300px; 
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px var(--black);
+  text-align: center;
+}
+
+.imgfavs {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+}
+
+.titulo_plato {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.boton_anterior,
+.boton_siguiente {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
 }
 
 
@@ -129,42 +237,90 @@
 
   /*Footer*/
 
-  .footer {
+  /*.footer {
     background-color: var(--grey-medio); 
     color: var(--white); 
     padding: 50px; 
     text-align: center; 
     
+  }*/
+
+  .footer {
+    background-color: var(--grey-medio); 
+    padding: 20px;
+    text-align: center;
   }
   
+  .navegacion {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+  }
+  
+  .list_nav {
+    list-style: none; 
+  }
+  
+  .list_item {
+    margin-right: 20px; 
+  }
+  .link_nav {
+    color: var(--grey); 
+    font-weight: bold; 
+  }
+  
+  .link_nav:hover {
+    color: var(--black); 
+  }
+  .social_media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social_media_icon {
+    margin-right: 15px; 
+  }
+  
+  .social_media_icon img {
+    width: 30px; 
+    height: 30px;
+    object-fit: cover; 
+  }
+  
+  
   /* Login*/
-  .body .body_registro{
-    margin: 0;
+   .body_registro{
+    margin: 100px;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--white);
+    background-color: var(--very-light-pink);
     height: 100vh;
 }
 
 .seccion_registro{
 position: absolute;
-top: 50%;
+top: 80%;
 left: 50%;
+
 transform: translate(-50%, -50%);
 width: 400px;
-background: var(--blue-light);
-border-radius: 10px;
+background: var(--grey-medio);
+border-radius: 20px;
+padding: 10px 10px;
 }
 
 .seccion_registro h2{
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid #babcbb;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid var(--white)
+    margin-top: 20px;
+  
     
 }
 
 .seccion_registro form{
-    padding: 0 40px;
+    padding: -15px ;
     box-sizing: border-box;
 }
 
@@ -181,6 +337,7 @@ form .username{
     border: none;
    background: none;
     outline: none;
+    color: var(--naranja);
 }
 
 input[type= "submit"]{
@@ -191,7 +348,7 @@ input[type= "submit"]{
     background: #e48e1c;
     border-radius: 25px;
     font-size: 18px;
-    color: white;
+    color: var(--white);
     cursor: pointer;
     outline: none;
 }
@@ -210,7 +367,7 @@ input[type="submit"]:hover{
 }
 
 .registrarse a{
-    color: var(--blue);
+    color:var(--blue);
     text-decoration: none;
 }
 
@@ -240,7 +397,7 @@ input[type="submit"]:hover{
 
   input[type= "date"]{
     font-size: 16px;
-    color: var(--grey-medio);
+    color: var(--grey);
     cursor: pointer;
     outline: none;
 }
