@@ -10,17 +10,17 @@
     <title>Restaurante</title>
     <link rel="stylesheet" href="/style/style.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="navegacion">
             <!--ACA NO SÉ SI PONER LAS COSAS EN DIV O NO-->
-            <!--<a class="logo_header" href="/index.html">-->
+            <a class="logo_header" href="/index.html">
+              <div class="logo"> 
                 <img src="/img/Logo.png" width="180px" height="180px">
-                <i class="logo"></i> 
-                <span></span>
+               <!-- <i class="logo"></i> -->
+            </div>
             </a>
-
+                <!-- <span></span> --> 
             <ul class="list_nav">
                 <li class="list_item">
                     <a class="link_nav" 
@@ -65,11 +65,27 @@
             
         </section>
         <hr>
-        <section id="favoritos" class="comidas_favoritas">
-            <h3 class="titulo_seccion">Los favoritos de la gente</h3>
-        
-            <div class="plato_fav" id="favoritos_container">
-                <!-- Aquí se agregarán los platos dinámicamente -->
+        <section id="favoritos" 
+            class="comidas_favoritas">
+            <h3 class="titulo_seccion">
+                Los favoritos de la gente</h3>
+                
+            <div class="plato_fav" 
+                id="favoritos_container">
+                <div class="plato_fav">
+                    <a href="/pages/menu.html">
+                        <div class="plato_fav">
+                            <img class="imgfavs" 
+                                src="" 
+                                alt="Asado para 4 personas" 
+                                loading="lazy">
+                                <div class="titulo_plato">
+                                    <h4>Asado para 4 personas</h4>
+                                </div>
+                        </div>
+                    </a>
+                </div>
+                 <!-- Acá hay que replicar con los otros platos y obviamete poner imàgenes y todo eso -->
             </div>
         
             <button class="boton_anterior">Anterior</button>  
@@ -77,7 +93,7 @@
         </section>
         <hr>
     </main>
-    <footer class="footer">
+  <!--  <footer class="footer">
         <nav class="navegacion">
             <ul class="list_nav">
                 <li class="list_item">
@@ -90,6 +106,6 @@
             <img src="/img/flecha arriba.jpg" alt="Subir" width="50px" height="50px">
           </a>
     </footer>
-<script src="/pages/scripts.js"></script>
+
 </body>
 </html>
