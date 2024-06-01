@@ -1,11 +1,13 @@
 <!-- LITERALMENTE LO HICE MUY SIMILAR A LA PÁGINA QUE HABÍA QUE REPLICAR, SIÉNTANSE LIBRES DE MODIFICAR LO QUE GUSTEN-->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../style/style.css">
-        <title>Restaurante</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     <header class="header">
@@ -13,30 +15,25 @@
             <!--ACA NO SÉ SI PONER LAS COSAS EN DIV O NO-->
             <a class="logo_header" href="/index.html">
               <div class="logo"> 
-                <img src="./img/Logo.png" width="180px" height="180px">
+                <img src="../img/Logo.png" width="180px" height="180px">
             </div>
             </a>
             <ul class="list_nav">
                 <li class="list_item">
                     <a class="link_nav" 
-                        href="../pages/menu.html">
+                        href="./pages/menu.html">
                         Menú</a>
                 </li>
-                <li class="list_item">
-                    <a class="link_nav" 
-                        href="./pages/registro.html">
-                        Registrarse</a>
-                </li>
-                <li class="list_item">
-                    <a class="link_nav login" 
-                        href="./pages/login.html">
-                        Iniciar Sesión</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main id="main"
-        class="main">
+                    <li class="list_item">
+                      <a class="link_nav" ref="./pages/registro.html"> Registrarse </a>
+                    </li>
+                      <li class="list_item">
+                        <a class="link_nav login" href="./pages/login.html"> Iniciar Sesión </a>
+                      </li>
+                 </ul>
+            </nav>
+          </header>
+    <main id="main" class="main">
         <section class="seccion_principal">
             <h1 class="titulo_principal">
                 El Restaurante</h1>
@@ -56,7 +53,6 @@
                     type="submit" 
                     value="Buscar">Buscar</button>
             </form>
-            
         </section>
         <hr>
         <section id="favoritos" 
@@ -67,10 +63,10 @@
             <div class="plato_fav" 
                 id="favoritos_container">
                 <div class="plato_fav">
-                    <a href="./pages/menu.html">
+                    <a href="/pages/menu.html">
                         <div class="plato_fav">
                             <img class="imgfavs" 
-                                src="../img/asado.jpg" 
+                                src="/img/asado.jpg" 
                                 alt="Asado para 4 personas" 
                                 loading="lazy">
                                 <div class="titulo_plato">
@@ -84,7 +80,8 @@
         
             <button class="boton_anterior">Anterior</button>  
             <button class="boton_siguiente">Siguiente</button>
-        </section>
+      </section>
+      
         <hr>
     </main>
     <footer class="footer">
@@ -115,6 +112,5 @@
         </p>
       </footer>
       
-
 </body>
 </html>
