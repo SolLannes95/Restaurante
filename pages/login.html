@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
+    <script src="./login.js"></script>
     <title>Iniciar Sesión</title>
 </head>
 
@@ -41,8 +42,8 @@
     <main id="main" 
         class="main">
         <section class="seccion_registro">
-            <!--pongo get ya que en github pages da error el method post-->
-            <form action="" method="get">
+            <!--  type="submit" pongo get ya que en github pages da error el method post-->
+            <form id="loginForm" action="" method="get" onsubmit="return validarUsuario(event)">
                 <h2 class="titulo_registro">
                     Iniciar Sesión</h2>
                 <div class="username">
@@ -61,23 +62,16 @@
                 </div>
                 <div class="recordar">
                     <input class="boton" 
-                        type="submit" 
-                        value="Iniciar Sesión">
+                    type="submit"
+                     id="submitBtn"   value="Iniciar Sesión" >
                 </div>
-               <!-- <div class="registrarse">
-                    <p>¿Todavía no sos usuario?</p>
-                    <a id="new_user" 
-                        class="new_user" 
-                        href="registro.html">
-                        <input class="boton" 
-                            type="button" 
-                            value="Registrarme"></a>
-                </div>-->
+              
                 <div class="registrarse">
                     ¿Todavía no sos usuario? <a href="../pages/registro.html"> Registro</a>
                 </div>
             </form>
         </section>
     </main>
+   
 </body>
 </html>
