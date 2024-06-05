@@ -95,7 +95,7 @@
 }
 
 .main {
-  max-width: 1200px; /
+  max-width: 1200px; 
   margin: 20px auto; 
   padding: 50px;
 }
@@ -189,7 +189,7 @@
 
 
 /*Esto lo puse solo para que se hagan una idea de como me imaginé que quedaría la página de menú después se puede cambiar*/
-.plato {
+ .plato {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,14 +295,13 @@
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--very-light-pink);
-    height: 100vh;
-}
+    height: 100vh; 
+  }
 
 .seccion_registro{
 position: absolute;
 top: 80%;
 left: 50%;
-
 transform: translate(-50%, -50%);
 width: 400px;
 background: var(--grey-medio);
@@ -313,7 +312,7 @@ padding: 10px 10px;
 .seccion_registro h2{
     text-align: center;
     padding: 0px 0px 20px 0px;
-    border-bottom: 1px solid var(--white)
+    border-bottom: 1px solid var(--white);
     margin-top: 20px;
      
 }

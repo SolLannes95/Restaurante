@@ -1,43 +1,42 @@
 
 function validarUsuario(event) {
-    event.preventDefault(); // Evita que el formulario se envíe automáticamente
+    event.preventDefault(); 
 
-    // Obtener los valores de los campos de entrada
+   
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
 
-
     if (!validarEmail(email)) {
-        alert('Por favor, ingrese un correo electrónico válido.');
+        alert('Por favor, ingrese un correo electrónico válido que contenga "@" y no tenga "ñ".');
         return false;
     }
 
-    if (password.length < 6) {
-        alert('La contraseña debe tener al menos 6 caracteres.');
+    if (password.length < 8 || /\s/.test(password)) {
+        alert('La contraseña debe tener al menos 8 caracteres y no debe contener espacios.');
         return false;
     }
 
- 
-
-    // Para este ejemplo, vamos a simular la validación con datos fijos
+    // Simular la validación con datos fijos
     var usuarioValido = {
         email: 'usuario@example.com',
         password: 'password123'
     };
 
+    // Validar usuario
     if (email === usuarioValido.email && password === usuarioValido.password) {
         alert('Inicio de sesión exitoso.');
-       
-         window.location="bienvenido.html";
+        window.location.href = "bienvenido.html"; 
     } else {
         alert('Correo electrónico o contraseña incorrectos.');
     }
 
-    return false; // Evita que el formulario se envíe
+    return false; 
 }
 
 function validarEmail(email) {
-    // Expresión regular para validar el formato del correo electrónico
-    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Validar el formato del email sin "ñ"
+    var regex = /^[^\s@ñ]+@[^\s@ñ]+\.[^\s@ñ]+$/;
     return regex.test(email);
 }
+
+
