@@ -414,3 +414,10 @@ input[type="submit"]:hover{
   width: 10px;
   height: 10px;
 }
+
+.plato_fav {
+  display: none;
+} 
+.plato_fav.active {
+  display: block;
+} 

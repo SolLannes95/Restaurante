@@ -9,105 +9,99 @@
 <body>
     <header class="header">
         <nav class="navegacion">
-            <!--ACA NO SÉ SI PONER LAS COSAS EN DIV O NO-->
             <a class="logo_header" href="./index.html">
-              <div class="logo"> 
-                <img src="./img/Logo.png" width="180px" height="180px">
-              </div>
+                <div class="logo">
+                    <img src="./img/Logo.png" width="180px" height="180px">
+                </div>
             </a>
             <ul class="list_nav">
                 <li class="list_item">
-                    <a class="link_nav" 
-                        href="./pages/menu.html">
-                        Menú</a>
+                    <a class="link_nav" href="./pages/menu.html">Menú</a>
                 </li>
-                    <li class="list_item">
-                      <a class="link_nav" ref="./pages/registro.html"> Registrarse </a>
-                    </li>
-                      <li class="list_item">
-                        <a class="link_nav login" href="./pages/login.html"> Iniciar Sesión </a>
-                      </li>
-                 </ul>
-            </nav>
-          </header>
+                <li class="list_item">
+                    <a class="link_nav" href="./pages/registro.html">Registrarse</a>
+                </li>
+                <li class="list_item">
+                    <a class="link_nav login" href="./pages/login.html">Iniciar Sesión</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <main id="main" class="main">
         <section class="seccion_principal">
-            <h1 class="titulo_principal">
-                El Restaurante</h1>
-            <h2 class="subtitulo_principal">
-                El sabor Argentino que necesitás para el momento quieras</h2>
-
+            <h1 class="titulo_principal">El Restaurante</h1>
+            <h2 class="subtitulo_principal">El sabor Argentino que necesitás para el momento quieras</h2>
+        </section>
         <section class="buscador_principal">
-            <h2 class="titulo_seccion">
-                ¿Qué estas buscando para comer?</h2>
+            <h2 class="titulo_seccion">¿Qué estás buscando para comer?</h2>
             <form class="buscador_comidas">
-                <input class="input_buscador" 
-                    type="text" 
-                    placeholder="Buscar comida..." 
-                    id="buscar" 
-                    name="buscar">
-                <button class="boton_buscador"
-                    type="submit" 
-                    value="Buscar">Buscar</button>
+                <input class="input_buscador" type="text" placeholder="Buscar comida..." id="buscar" name="buscar">
+                <button class="boton_buscador" type="submit" value="Buscar">Buscar</button>
             </form>
         </section>
         <hr>
-        <section id="favoritos" 
-            class="comidas_favoritas">
-            <h3 class="titulo_seccion">
-                Los favoritos de la gente</h3>
-                
-            <div class="plato_fav" 
-                id="favoritos_container">
-                <div class="plato_fav">
+        <section id="favoritos" class="comidas_favoritas">
+            <h3 class="titulo_seccion">Los favoritos de la gente</h3>
+            <div id="favoritos_container">
+                <div class="plato_fav active">
                     <a href="./pages/menu.html">
-                        <div class="plato_fav">
-                            <img class="imgfavs" 
-                                src="./img/asado.jpg" 
-                                alt="Asado para 4 personas" 
-                                loading="lazy">
-                                <div class="titulo_plato">
-                                    <h4>Asado para 4 personas</h4>
-                                </div>
+                        <img class="imgfavs" src="./img/asado.jpg" alt="Asado para 4 personas" loading="lazy">
+                        <div class="titulo_plato">
+                            <h4>Asado para 4 personas</h4>
                         </div>
                     </a>
                 </div>
-                 <!-- Acá hay que replicar con los otros platos y obviamete poner imàgenes y todo eso -->
+                <div class="plato_fav">
+                    <a href="./pages/menu.html">
+                        <img class="imgfavs" src="./img/imagen1.jpg" alt="Ensalada mixta" loading="lazy">
+                        <div class="titulo_plato">
+                            <h4>Ensalada mixta</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="plato_fav">
+                    <a href="./pages/menu.html">
+                        <img class="imgfavs" src="../img/imagen13.jpg" alt="Ñoquis de papa y espinaca" loading="lazy">
+                        <div class="titulo_plato">
+                            <h4>Ñoquis de papa y espinaca</h4>
+                        </div>
+                    </a>
+                </div>
+                <div class="plato_fav">
+                  <a href="./pages/menu.html">
+                      <img class="imgfavs" src="../img/imagen14.jpg" alt="Pastas con langostinos" loading="lazy">
+                      <div class="titulo_plato">
+                          <h4>Pastas con langostinos</h4>
+                      </div>
+                  </a>
+              </div>
             </div>
-        
-            <button class="boton_anterior">Anterior</button>  
+            <button class="boton_anterior">Anterior</button>
             <button class="boton_siguiente">Siguiente</button>
-      </section>
-      
+        </section>
         <hr>
     </main>
     <footer class="footer">
         <nav class="navegacion">
-          <ul class="list_nav">
-            <li class="list_item">
-              <a class="link_nav" href="./pages/terminosYcondiciones.html">
-                Términos y condiciones
-              </a>
-            </li>
-          </ul>
+            <ul class="list_nav">
+                <li class="list_item">
+                    <a class="link_nav" href="./pages/terminosYcondiciones.html">Términos y condiciones</a>
+                </li>
+            </ul>
         </nav>
-      
         <div class="social_media">
-          <a href="#" class="social_media_icon">
-            <img src="./img/facebook.png" alt="Facebook">
-          </a>
-          <a href="#" class="social_media_icon">
-            <img src="./img/twitter.png" alt="Twitter">
-          </a>
-          <a href="#" class="social_media_icon">
-            <img src="./img/instagram.png" alt="Instagram">
-          </a>
+            <a href="#" class="social_media_icon">
+                <img src="./img/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="social_media_icon">
+                <img src="./img/twitter.png" alt="Twitter">
+            </a>
+            <a href="#" class="social_media_icon">
+                <img src="./img/instagram.png" alt="Instagram">
+            </a>
         </div>
-      
-        <p class="copyright">
-          © 2024 Todos los derechos reservados.
-        </p>
-      </footer>     
-     
+        <p class="copyright">© 2024 Todos los derechos reservados.</p>
+    </footer>
+    <script src="./js/scripts.js"></script>
 </body>
 </html>
